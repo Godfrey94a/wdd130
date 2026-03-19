@@ -1,24 +1,35 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #555;
+    --background-color: #f4f4f4;
+    --text-color: #000;
+    --nav-color: darkblue;
+    --link-color: white;
+    --padding: 10px;
+    --border: 2px solid black;
+}
+
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: var(--nav-color);
+    padding: var(--padding);
 }
 
 nav a {
-    color: white;
+    color: var(--link-color);
     display: block;
     padding: 20px;
 }
 
 h1 {
-    color: darkblue;
+    color: var(--nav-color);
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: var(--border);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: var(--secondary-color);
 }
 
 p {
@@ -33,10 +44,10 @@ main {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgb(0, 0, 0, 0.2);
+    border: var(--border);
     padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    background-color: var(--background-color);
+    color: var(--primary-color);
     text-align: center;
 }
 
@@ -52,6 +63,6 @@ main img {
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: var(--border);
     text-align: center;
 }
