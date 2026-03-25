@@ -1,8 +1,6 @@
 :root {
     --primary-color: #055a05;
     /* forest green */
-    --secondary-color: #f4a261;
-    /* warm sand */
     --accent1-color: #264653;
     /* dark slate blue */
     --accent2-color: #e9c46a;
@@ -75,10 +73,10 @@ header {
 
 .hero article {
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     left: 20px;
-    background-color: rgb(255, 255, 0.8);
-    padding: 10px;
+    background-color: rgb(118, 140, 180);
+    padding: 5px;
 }
 
 .hero article img {
