@@ -9,7 +9,6 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* ✅ FIXED (you were missing the * selector!) */
 * {
     margin: 0;
     padding: 0;
@@ -22,13 +21,19 @@ body {
     background-color: #eee;
 }
 
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-/* Layout spacing */
 nav,
 p,
 section,
@@ -37,46 +42,10 @@ article {
     padding: 8px;
 }
 
-header,
-main,
-footer {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-/* ✅ HEADER FIX (logo + nav side by side) */
-header {
-    display: grid;
-    grid-template-columns: 200px auto;
-    align-items: center;
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-    padding: 10px;
-}
-
-/* ✅ NAVIGATION FIX */
-nav {
-    display: flex;
-}
-
-header nav a {
-    color: white;
-    text-decoration: none;
-    margin: 10px;
-    font-weight: bold;
-}
-
-/* SOCIAL MEDIA */
 .socialmedia {
-    display: flex;
-    gap: 10px;
-}
-
-.socialmedia a {
     text-decoration: none;
 }
 
-/* HERO SECTION */
 .hero {
     position: relative;
 }
@@ -87,37 +56,18 @@ header nav a {
     height: auto;
 }
 
-.hero h1 {
+h1 {
     position: absolute;
     top: 20px;
-    left: 0;
     width: 100%;
     padding: 16px;
     text-align: center;
+    opacity: 0.7;
     background-color: var(--accent1-color);
     color: #fff;
-}
-
-/* ✅ IMPROVED ARTICLE OVERLAY */
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 10px;
 }
 
 .hero article img {
     float: right;
     width: 125px;
-}
-
-/* ✅ SECTION STYLE (like teacher bars) */
-section h2 {
-    background-color: #1d3557;
-    color: white;
-    padding: 10px;
-    text-align: center;
 }
