@@ -1,12 +1,15 @@
 :root {
     --primary-color: #055a05;
-    /* forest green */
+    --secondary-color: #f4a261;
     --accent1-color: #264653;
-    /* dark slate blue */
     --accent2-color: #e9c46a;
-    /* light golden yellow */
-    --heading-font: "Times New Roman", Georgia, serif;
+    --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
 }
 
 * {
@@ -18,7 +21,6 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-    background-color: #eee;
 }
 
 header,
@@ -42,7 +44,7 @@ article {
     padding: 8px;
 }
 
-.socialmedia {
+.socialmedia a {
     text-decoration: none;
 }
 
@@ -65,6 +67,12 @@ h1 {
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: #fff;
+}
+
+.article {
+    position: absolute;
+    background-color: #fff;
+    color: var(--secondary-color);
 }
 
 .hero article img {
