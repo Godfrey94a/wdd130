@@ -1,7 +1,7 @@
-#{
- margin:o;
-padding: 0;
-box-sizing: border-box;
+* {
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -65,7 +65,7 @@ aside img {
 
 aside h2 {
     position: absolute;
-    top: 65px;
+    top: 47px;
     left: 150px;
 
 }
@@ -81,10 +81,11 @@ footer {
     text-align: center;
 }
 
-*/ class selectors */ .box {
+/* class selectors */
+.box {
     margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, .1);
+    border: 1px solid rgb(0 0 0/ 10%);
     padding: 1rem;
-    background-color: #eee;
+    background-color: #ddd;
     color: #000;
 }
