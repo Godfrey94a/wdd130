@@ -1,8 +1,12 @@
 :root {
-    --primary-color: #055a05; /* forest green */
-    --secondary-color: #f4a261; /* warm sand*/
-    --accent1-color: #264653; /*dark slate blue */
-    --accent2-color: #e9c46a; /*light golden yellow */
+    --primary-color: #055a05;
+    /* forest green */
+    --secondary-color: #f4a261;
+    /* warm sand*/
+    --accent1-color: #264653;
+    /*dark slate blue */
+    --accent2-color: #e9c46a;
+    /*light golden yellow */
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -48,6 +52,11 @@ article {
     text-decoration: none;
 }
 
+.socialmedia {
+    width: 40px;
+    height: 40px;
+}
+
 .hero {
     position: relative;
 }
@@ -78,7 +87,6 @@ article {
     right: 20px;
     padding: 1rem;
 
-
 }
 
 .hero article img {
@@ -87,5 +95,5 @@ article {
     height: auto;
     margin: 0 0 1rem 1rem;
     border: 2px solid var(--accent1-color);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
