@@ -1,15 +1,15 @@
 :root {
-    --primary-color: #055a05;
-    --secondary-color: #f4a261;
-    --accent1-color: #264653;
-    --accent2-color: #e9c46a;
+    --primary-color: #055a05; /* forest green */
+    --secondary-color: #f4a261; /* warm sand*/
+    --accent1-color: #264653; /*dark slate blue */
+    --accent2-color: #e9c46a; /*light golden yellow */
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
 header {
     background-color: var(--primary-color);
-    color: var(--accent2-color);
+    color: #333;
 }
 
 * {
@@ -69,13 +69,23 @@ article {
     color: #fff;
 }
 
-.article {
+.hero article {
     position: absolute;
     background-color: #fff;
-    color: var(--secondary-color);
+    color: var(--accent1-color);
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    padding: 1rem;
+
+
 }
 
 .hero article img {
     float: right;
     width: 125px;
+    height: auto;
+    margin: 0 0 1rem 1rem;
+    border: 2px solid var(--accent1-color);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
