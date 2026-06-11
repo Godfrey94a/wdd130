@@ -13,33 +13,49 @@
         <h1>WDD 130 | Godfrey | HTML Form-User Poll</h1>
     </header>
     <main>
-        <form>
+        <div>
             <fieldset>
                 <legend>Contact Information</legend>
-                <label for="fullname">Full Name:</label>
-                <input type="text" id="fullname" name="fullname" required>
-                <label for="useremail">Email:</label>
-                <input type="email" id="useremail" name="useremail" required>
+                <div class="form-item">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div class="form-item colomn2">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail" required>
+                </div>
             </fieldset>
             <fieldset>
                 <legend>Questions</legend>
-                <label for="browser">What is your favorite browser?</label>
-                <select id="browser" name="browser">
-                    <option value="">choose one</option>
-                    <option value="chrome">Chrome</option>
-                    <option value="firefox">Firefox</option>
-                    <option value="safari">Safari</option>
-                    <option value="edge">Edge</option>
-                    <option value="other">Other</option>
-                </select>
-                <label for="pet">Do you have a household pet?</label>
-                <input type="checkbox" id="pet" name="pet">
-                <label for="feedback">List the places you have lived:</label>
-                <textarea id="feedback" name="feedback" rows="4"
-                  placeholder="stillwater Florid, Amsterdam Netherlands, Timbuktu Mali"></textarea>
+
+                <!--browser:form-item + colomn1-->
+                <div class="form-item colomn1">
+                    <label for="browser">What is your favorite browser?</label>
+                    <select id="browser" name="browser">
+                        <option value="">choose one</option>
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="safari">Safari</option>
+                        <option value="edge">Edge</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <!--Pet: form-item + column1-->
+                <div class="form-item colomn1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+
+                <!--place lived :form-item only, no column class-->
+                <div class="form-item">
+                    <label for="feedback">List the places you have lived:</label>
+                    <textarea id="feedback" name="feedback" rows="4"
+                      placeholder="stillwater Florid, Amsterdam Netherlands, Timbuktu Mali"></textarea>
+                </div>
             </fieldset>
             <button type="submit">Submit Poll</button>
-        </form>
+            </form>
     </main>
 
 </body>
