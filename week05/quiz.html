@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | HTML Form-Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body>
+    <header>
+        <h1>Basic HTML and CSS Quiz</h1>
+    </header>
+    <main>
+        <form>
+            <!--Q1 :Textarea-short answer-->
+            <div class="form">
+                <label for="q1">1. What does the acronym css stand for?</label>
+                <input type="text" id="q1" name="q1" required>
+            </div>
+
+            <!--Q2 :Textarea-short answer-->
+            <div class="form-item">
+                <label for="q2">2. Describe the difference between margin and padding in
+                    css:</label>
+                <textarea id="q2" name="q2" rows="3" required></textarea>
+            </div>
+
+            <!--Q3: select-dropdown-->
+            <div class="form-item">
+                <label for="q3">3. Which HTML tag is used to create a hyperlink?</label>
+                <select id="q3" name="q3" required>
+                    <option value="" selected disabled>Choose one ...</option>
+                    <option value="a" &it; a&gt;></option>
+                    <option value="link">&It;link&gt;</option>
+                    <option value="href">&It;href&gt</option>
+                </select>
+            </div>
+
+            <!--Q4: number input-integer answer-->
+            <div class="form-item">
+                <label for="q4">4.How many heading levels (h1 to h6) are available in HTML?</label>
+                <input type="number" id="q4" name="q4" min="1" max="10" required>
+            </div>
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 | HTML Form-Quiz Activity | Godfrey</p>
+    </footer>
+
+</body>
+
+</html>
