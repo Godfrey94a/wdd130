@@ -253,3 +253,111 @@ textarea {
 .contact-form button:hover {
     background-color: darkgreen;
 }
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    text-align: center;
+    color: #eee;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem 0;
+}
+
+.newsletter {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #eee;
+    border-radius: 0.5rem;
+}
+
+.newsletter .form-item {
+    display: grid;
+    margin-bottom: 1rem;
+}
+
+.cta {
+    text-align: center;
+    margin: 3rem 0;
+    padding: 2rem;
+    background-color: #b4cde6;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: navy;
+    color: #eee;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+.cta-button:hover {
+    background-color: darkgreen;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.grid-item img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.cta-trips {
+    text-align: center;
+    padding: 2rem;
+    background-color: #e8e8e8;
+    margin-bottom: 2rem;
+}
+
+.trips-details {
+    margin: 2rem 0;
+}
+
+.trips {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.trip img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+
+.trip-table th,
+.trip-table td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.trip-table thead {
+    background-color: navy;
+    color: white;
+}
